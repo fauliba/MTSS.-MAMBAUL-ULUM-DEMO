@@ -1,0 +1,423 @@
+body{
+    font-family: Monstserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#topbar{
+    background-color:green;
+    color:#fff;
+    height: 70px;
+    line-height: 70px;
+}
+
+.top-contact, .sosmed{
+    list-style: none;
+}
+
+#topbar li{
+    display: inline-block;
+}
+
+#topbar li a{
+    color:#fff;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#topbar li a i {
+    color: #ffee00;
+    margin-right: 5px;
+}
+
+#topbar .sosmed li a{
+    padding: 0 5px;
+    color: #fff;
+}
+#topbar .sosmed li a i{
+    color: #fff;
+}
+header {
+    padding: 10px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center; /* sejajar vertikal */
+}
+
+/* TEKS BRAND */
+.brand .brand-name {
+    margin-left: 15px;
+
+}
+
+.brand .brand-name h1 {
+    font-size: 35px;
+    color:green;
+    text-transform: uppercase;
+
+    
+}
+
+.brand .brand-name h3 {
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #888;
+    
+}
+
+/* SEARCH BOX */
+.pembungkus-searchbox {
+    display: flex;
+    align-items: center;
+}
+
+/* INPUT SEARCH */
+.searchbox  {
+    width: 100%;
+}
+
+/* BUTTON SEARCH */
+.btn.btn-utama {
+    background-color: green;
+    color: #fff;
+}
+
+/* CSS UNTUK Navbar */
+
+.nav{
+    height: 40;
+}
+
+/* membuat menu tersebar merata kiri ke kanan */
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* pastikan item rapi dan sejajar */
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+/* agar area klik nyaman */
+.navbar-nav .nav-link {
+  padding: 15px 20px;
+}
+
+
+.navbar{
+    padding: 0;
+    border-bottom: 5px solid #ffee00;
+
+}
+
+.bg-hijau{
+    background-color: green !important;
+    color:#fff
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .active>.navbar-link,
+.navbar-dark .navbar-nav .navbar-link .active,
+.navbar-dark .navbar-nav .navbar-link .show,
+.navbar-dark .navbar-nav .show>.navbar-link{
+    background-color: #ffee00;
+    color: #fff;
+
+}
+/* menu aktif */
+.nav-item.active {
+  background-color: #ffee00;
+}
+
+.nav-item.active .nav-link {
+  color: green !important;
+  font-weight: 600;
+}
+
+.nav-item.active{
+    background-color: #ffee00;
+    color: green;
+}
+
+.navbar-dark .navbar-nav .navbar-link{
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+li.nav-item.active{
+    color: green;
+}
+
+#slider-hero,
+.slider-item,
+.slider-item-img {
+  height: 100vh;
+}
+
+.slider-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* container slider */
+.slider-item {
+  position: relative;
+  height: 100vh;
+}
+
+/* gambar banner */
+.slider-item-img,
+.slider-item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item-img img {
+  object-fit: cover;
+}
+
+/* konten di tengah banner */
+.slider-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:rgb(255, 255, 255);
+  max-width: 800px;
+  padding: 20px;
+  z-index: 2;
+}
+.slider-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  padding: 25px 35px;
+  color:rgb(255, 255, 255);
+  z-index: 2;
+}
+
+/* overlay kotak */
+.slider-item-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.548);
+  z-index: -1;
+}
+
+/* container nav */
+#slider-hero-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* tombol */
+#slider-hero-nav .owl-prev,
+#slider-hero-nav .owl-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* pastikan hero jadi acuan */
+#hero-area {
+  position: relative;
+}
+
+/* container tombol */
+#slider-hero-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* tombol kiri & kanan */
+#slider-hero-nav .owl-prev,
+#slider-hero-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 50px;
+  height: 50px;
+  background:green;
+  color: #fff;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* posisi kiri */
+#slider-hero-nav .owl-prev {
+  left: 30px;
+}
+
+/* posisi kanan */
+#slider-hero-nav .owl-next {
+  right: 30px;
+}
+
+.video-wrapper iframe{
+  padding-right: 30px;
+
+}
+
+/* Section sambutan */
+
+#sambutan{
+  margin: 70px 0px;
+}
+
+#sambutan h2{
+  color: green;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#sambutan h3{
+  color: green;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#sambutan P{
+  color: green;
+  font-size: 14px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#prestasi {
+    padding: 60px 0;
+    background: #f4f6f8;
+}
+
+/* Judul */
+#prestasi .section-title h2 {
+  color: green;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Card */
+#prestasi .section-item {
+    background: #ffffff;
+    padding: 18px;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+#prestasi .section-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Gambar */
+#prestasi img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+/* Judul Prestasi */
+#prestasi h3 {
+  color: green;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Meta */
+#prestasi span {
+    font-size: 13px;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#prestasi span i {
+    color: #888;
+    margin-right: 4px;
+}
+
+/* Deskripsi */
+#prestasi p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+/* BUTTON SELENGKAPNYA */
+.btn-prestasi {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color:#fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    background-color: green;
+}
+
+.btn-prestasi i {
+    font-size: 12px;
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.btn-prestasi:hover {
+    background:#ffee00;
+    color: #1f2937;
+    border-color:#ffee00;
+}
+
+.btn-prestasi:hover i {
+    transform: translateX(4px);
+}
+
+
+
+
